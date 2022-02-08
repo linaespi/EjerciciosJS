@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 13 - Usuarios premium</title>
+    <script type="text/javascript">
+
+        const users = [
+
+            { username: 'ppc90', age: 30, premium: false },
+
+            { username: 'lu65', age: 24, premium: true },
+
+            { username: 'maria3', age: 36, premium: false },
+
+            { username: 'abc123', age: 30, premium: false },
+
+            { username: 'sergio58', age: 30, premium: true }, ];
+
+        let premiumU = users.filter(function (users) {
+            return users.premium == true
+        });
+        console.log("Este usuario es premium " + premiumU[0] + premiumU[1]);
+
+        let noPremium = users.filter(function (users) {
+            return users.premium == false
+        });
+        console.log("Este usuario NO es premium " + noPremium);
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Ejercicio 13 - Usuarios premium</h1>
+</body>
+</html>
